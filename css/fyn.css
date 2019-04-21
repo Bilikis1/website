@@ -2,9 +2,9 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-/*	border: solid 1px red;
-*/
+	/* border: solid 1px red;b */
 }
+
 body {
 	background-image: url("../images/translogo.png");
 }
@@ -13,15 +13,15 @@ header {
 	display: flex;
 	width: 100%;
 	height: 140px;
-	background-image: url("..images/translogo.png");
-	position: relative;
+	background-image: url("../images/translogo.png");
+	/* position: relative; */
 
 }
 
 header img {
 	width: 180px;
 	height: 90px;
-	position: absolute;
+	/* position: absolute; */
 	margin-top: 20px;
 	margin-left: 20px;
 }
@@ -37,32 +37,58 @@ header h1 {
 
 }
 
-.HMInav {
-	position: absolute;
-	top: 140px;
+#hminav a {
+	color: #fff;
+	background: #000033;
+	display: block;
+	/* height: 60px; */
+	font-family: Exotc350 Dmbd BT;
 	display: flex;
-	height: 40px;
-	width: 100%;
-	background-color: #000033;
-	text-decoration: none;
 	align-items: center;
-	justify-content: flex-end;
-
-}
-.HMInav a {
+	justify-content: center;
 	text-decoration: none;
-	position: relative;
-	display: flex;
-	padding: 9.5px 16px;
-	color:  #e6f5ff;
-	font-family:Exotc350 DmBd BT;
-	font-size: 18px;
-
+	transition: background 0.45s;
+	padding: 14px 16px;
+	/* z-index: -1; */
 }
 
-.HMInav a:hover {
-	background-color: red;
-	color: white;
+#hminav a:hover {
+	background: red;
+}
+
+#hminav ul {
+	list-style: none;
+	display: flex;
+}
+
+#hminav li {
+	width: 150%;
+	text-align: center; 
+	position: relative;
+}
+
+#hminav li:hover .submenu > li {	
+	display: block;
+	top: 0px;
+}
+
+.submenu li {
+	display: none;
+	position: absolute;
+	top: 0px;
+	text-align: left;
+}
+
+.submenu {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 100%;
+}
+
+.arrow {
+	font-size: 10px;
+	left: 6px;
 }
 
 div.grouppic {
@@ -75,7 +101,8 @@ div.grouppic {
 	/*border: solid 1px red;*/
 	align-items: center;
 	justify-content: center;
-	margin-top: 40px;
+	/* margin-top: 40px; */
+	z-index: -1;
 }
 
 div.hp {
@@ -198,7 +225,7 @@ div.aboutfyn2 {
 div.aboutfyn3 {
 	width: 400px;
 	height: 638px;
-	/*border: solid 1px red;*/
+	/* border: solid 1px red; */
 	padding-left: 16px;
 }
 
@@ -207,23 +234,23 @@ div.aboutfyn3 h1 {
 	font-family: Exotc350 DmBd BT;
 	color: #a6ce39;
 	font-weight: bolder;
-	padding: 10px 25px;
-	margin-top: 10px;
+	/* padding: 10px 25px; */
+	margin-top: 5px;
 }
 
 div.aboutfyn3 p1 {
 	padding: 18px 25px;
-	line-height: 20px;
+	line-height: 15px;
 	font-size: 16px;
 	color: white;
 	font-family: calibri;
 	border-bottom: solid 2px #a6ce39;
-	/*border: solid 1px red;*/
+	border: solid 1px red;
 	padding-top: 0px;
 }
 
 div.aboutfyn3 p {
-	padding: 18px 25px;
+	padding: 10px 25px;
 	line-height: 20px;
 	font-size: 16px;
 	color: white;
@@ -237,10 +264,11 @@ div.aboutfyn3 p {
 	font-size: 20px;
 	font-family: Exotc350 DmBd BT;
 	color: #a6ce39;
-/*	font-weight: bolder;
-*/	padding: 10px 25px;
+/*	font-weight: bolder;*/	
+	/* padding: 10px 25px; */
 	margin-top: 0px;
 	padding-top: 0px;
+	margin-left: 20px;
 }
 div.plain2 {
 	display: flex;
@@ -305,6 +333,7 @@ div.code {
 	background-image: url("../images/code.png"); 
 	background-position:center;
 	background-size: contain;
+	background-repeat: no-repeat;
 	height: 531px;
 	/*border: solid 1px red;*/
 	align-items: flex-start;
@@ -319,19 +348,20 @@ div.code h1 {
 	color: white;
 	margin-left: 70px;
 	padding: 20px;
+	line-height: 25px;
 }
 
-#p1 {
+div.code h2 {
 	font-family: Exotc350 DmBd BT;
 	font-size: 100px;
 	color: #a6ce39;
 	margin-left: 50px;
-	padding: 10px 0px;
+	padding: 3px 0px;
 	word-spacing: 20px;
 	font-weight: bolder;
 }
 
-#text {
+div.code h3 {
 	font-size: 50px;
 	color: white;
 	margin-left: 50px;
@@ -342,165 +372,116 @@ div.code h1 {
 }
 
 div.code p {
-	font-size: 23px;
 	font-family: calibri;
-	margin-left: 50px;
+	font-size: 20px;
 	color: white;
+	margin-left: 50px;
 }
 
-div.edudemo {
-	display: flex;
+div.code a {
+	line-height: 60px;
+	margin-left: 50px;
+	color: white;
+
+
+}
+
+footer {
+	/* display: flex; */
+	background: #252525;
+	height: 430px;
 	width: 100%;
-	height: 506px;
-	/*border: solid 1px red;*/
-	align-items: stretch;
-	justify-content: space-evenly;
 }
 
-div.education {
+div.footercontainer {
 	display: flex;
-	width: 660px;
-	background-image: url("../images/education.jpg"); 
-	background-position:center;
-	background-size: cover;
-	height: 506px;
-	/*border: solid 1px red;*/
-	align-items: stretch;
-	justify-content: flex-start;
-	flex-direction: column;
-	margin-top: 10px;	
-}
+	width: 1140px;
+	height: 354px;
+	margin: 0px 113px;
+	padding: 80px 15px 0px;
+	/* border: solid 1px red; */
 
-div.education h1 {
-	font-family: Exotc350 DmBd BT;
-	font-size: 80px;
-	color: #93b82e;
-	margin-left: 30px;
-	margin-top: 20px;	
-	/*background: rgb(64, 64, 64, 0.5);*/
-	font-weight: bolder;
-}
+} 
 
-#edu {
-	font-size: 30px;
-	color: white;
-	margin-left: 30px;
-	padding: 10px 0px;
-	font-weight: bolder;
-	word-spacing: 10px;
-	font-family: Copperplate Gothic;
-}
-
-div.democracy {
+div.littleabout {
 	display: flex;
-	width: 660px;
-	background-image: url("../images/democracy.jpg"); 
-	background-position:center;
-	background-size: cover;
-	height: 506px;
-	/*border: solid 1px red;*/
-	align-items: stretch;
-	justify-content: flex-start;
 	flex-direction: column;
-	margin-top: 10px;	
+	width: 285px;
+	height: 265px;
+	padding: 0px 15px;
+	/* border: solid 1px red; */
+	/* align-items: flex-start; */
+
+	}
+
+div.links {
+	/* display: flex; */
+	/* flex-direction: column; */
+	width: 285px;
+	height: 265px;
+	padding: 0px 15px;
+	/* border: solid 1px red; */
 }
 
-div.democracy h1 {
-	font-family: Showcard Gothic;
-	font-size: 50px;
-	color: #93b82e;
-	margin-left: 30px;
-	margin-top: 20px;	
-/*	background: rgb(64, 64, 64, 0.5);*/
-}
-
-#demo {
-	font-size: 30px;
-	color: white;
-	margin-left: 30px;
-	padding: 10px 0px;
-	font-weight: bolder;
-	word-spacing: 10px;
-	font-family: Copperplate Gothic;
-}
-
-div.health {
+div.downlogo {
 	display: flex;
-	width: 100%;
-	background-image: url("../images/health.jpg"); 
-	background-position:center;
-	background-size: contain;
-	height: 531px;
-	/*border: solid 1px red;*/
-	align-items: flex-start;
-	justify-content: flex-start;
 	flex-direction: column;
-	margin-top: 15px;
+	width: 285px;
+	height: 265px;
+	padding: 0px 15px;
+	/* border: solid 1px red; */
+	justify-content: center;
+	align-items: center;
+
+}
+footer img {
+	width: 200px;
+	height: auto;
 }
 
-div.health h1 {
-	font-family: Exotc350 DmBd BT;
-	font-size: 100px;
-	color: #93b82e;
-	margin-left: 50px;
-	margin-top: 70px;	
-	/*background: rgb(64, 64, 64, 0.5);*/
-	font-weight: bolder;
-}	
-
-#aware {
-	font-size: 50px;
-	/*color: #000033;*/
-	color: white;
-	margin-left: 50px;
-	padding: 0px 0px;
-	font-weight: bolder;
-	word-spacing: 10px;
-	font-family: Copperplate Gothic;
+div.contact {
+	display: flex;
+	flex-direction: column;
+	width: 285px;
+	height: 265px;
+	padding: 0px 15px;
+	/* border: solid 1px red; */
 }
 
-div.health p {
-	font-size: 25px;
+footer h1 {
+	font-family: Exotc350 DmBd BT;;
+	color: yellow;
+	font-size: 18px;
+	line-height: 40px;
+}
+footer a {
+	color: #e6e6e6;
 	font-family: calibri;
-	margin-left: 50px;
-	color: white;
-	background: rgba(38,38,38,0.5);
-	padding-top: 20px;
+	line-height: 25px;
+	font-size: 15px;
+	text-decoration: none;
 }
 
-div.skilead {
-	display: flex;
+footer li {
+	width: 255px;
+	border-bottom: solid 1px #333333;
+	list-style: none;
+}
+
+footer p {
+	color: #e6e6e6;
+	font-family: calibri;
+	text-align: left;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+div.copy {
+	/* border: solid 1px red; */
 	width: 100%;
-	height: 531px;
-	/*border: solid 1px red;*/
-	align-items: stretch;
-	justify-content: space-evenly;
-}
-div.skill {
 	display: flex;
-	width: 660px;
-	background-image: url("images/skill.jpg"); 
-	background-position:center;
-	background-size: cover;
-	height: 506px;
-	/*border: solid 1px red;*/
-	align-items: stretch;
-	justify-content: flex-start;
-	flex-direction: column;
-	margin-top: 10px;	
-}
-
-div.lead {
-	display: flex;
-	width: 660px;
-	background-image: url("images/lead.jpg"); 
-	background-position:center;
-	background-size: cover;
-	height: 506px;
-	/*border: solid 1px red;*/
-	align-items: stretch;
-	justify-content: flex-start;
-	flex-direction: column;
-	margin-top: 10px;	
+	align-items: flex-end;
+	height: 70px;
+	justify-content: center;
 
 }

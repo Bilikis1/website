@@ -2,9 +2,9 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-/*	border: solid 1px red;
-*/
+	/* border: solid 1px red;b */
 }
+
 body {
 	background-image: url("../images/translogo.png");
 }
@@ -14,14 +14,14 @@ header {
 	width: 100%;
 	height: 140px;
 	background-image: url("../images/translogo.png");
-	position: relative;
+	/* position: relative; */
 
 }
 
 header img {
 	width: 180px;
 	height: 90px;
-	position: absolute;
+	/* position: absolute; */
 	margin-top: 20px;
 	margin-left: 20px;
 }
@@ -37,38 +37,63 @@ header h1 {
 
 }
 
-.HMInav {
-	position: absolute;
-	top: 140px;
+#hminav a {
+	color: #fff;
+	background: #000033;
+	display: block;
+	/* height: 60px; */
+	font-family: Exotc350 Dmbd BT;
 	display: flex;
-	height: 40px;
-	width: 100%;
-	background-color: #000033;
-	text-decoration: none;
 	align-items: center;
-	justify-content: flex-end;
-
-}
-.HMInav a {
+	justify-content: center;
 	text-decoration: none;
-	position: relative;
-	display: flex;
-	padding: 9.5px 16px;
-	color:  #e6f5ff;
-	font-family:Exotc350 DmBd BT;
-	font-size: 18px;
-
+	transition: background 0.45s;
+	padding: 14px 16px;
 }
 
-.HMInav a:hover {
-	background-color: red;
-	color: white;
+#hminav a:hover {
+	background: red;
+}
+
+#hminav ul {
+	list-style: none;
+	display: flex;
+}
+
+#hminav li {
+	width: 150%;
+	text-align: center; 
+	position: relative;
+}
+
+#hminav li:hover .submenu > li {	
+	display: block;
+	top: 0px;
+}
+
+.submenu li {
+	display: none;
+	position: absolute;
+	top: 0px;
+	text-align: left;
+}
+
+.submenu {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 100%;
+}
+
+.arrow {
+	font-size: 10px;
+	left: 6px;
 }
 
 div.firstpic {
 /*	position: relative;
 */	display: flex;
-	margin-top: 40px;
+	/* margin-top: 40px; */
 	height: 730px;
 	width: 100%;
 	background-image: url("../images/picture.jpg");
@@ -127,11 +152,11 @@ div.methonav {
 
 div.methonav a {
 	color: white;
-	padding: 0px 16px;
-	font-family: Agency FB;
+	padding: 0px 8px;
+	font-family: calibri;
 	font-size: 16px;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: bolder;
 	color: #ffcc00;
 	text-transform: uppercase;
 	border-right: solid 2px white;
@@ -170,6 +195,8 @@ div.whywomen p {
 	font-size: 32px;
 	font-family: Gabriola;
 	line-height: 40px;
+	color: black;
+	text-align: center
 
 }
 
@@ -194,8 +221,8 @@ img.pic2-alt {
 	max-height: 100%;
 }
 
-div.picwhowe {
-	background-image: url("images/pic2.jpg");
+div#picwhowe {
+	background-image: url("../images/pic2.jpg");
 	background-position: center;
 	background-size: cover;
 	flex: 0 0 500px;
@@ -204,13 +231,13 @@ div.picwhowe {
    	/*border: solid 1px red;*/
 
 }
-div.whowe {
+div#whowe {
 	flex: 0 1 670px;
    	/*border: solid 1px red;*/
 }
 
 
-div.whowe h1 {
+div#whowe h1 {
 	font-family: Exotc350 DmBd BT;
 	line-height: 90px;
 	color: #e6004c;
@@ -218,7 +245,7 @@ div.whowe h1 {
 
 
 }
-div.whowe p {
+div#whowe p {
  	font-size: 15px;
  	text-align: justify;
  	font-family: Arial;
@@ -229,8 +256,7 @@ div.whowe p {
 
 div.about2 {
 	display: flex;
-	justify-content: space-evenly;
-	align-items: stretch;
+	justify-content: space-evenly;	align-items: stretch;
 	flex-flow: row no-wrap;
 	width: 100%;
 	height: 470px;
@@ -238,7 +264,7 @@ div.about2 {
  	/*border: solid 1px red;*/
 } 
 
-div.picvision {
+div#picvision {
 	background-image: url("../images/picvision.jpg");
 	background-position: left;
 	background-size: cover;
@@ -249,14 +275,14 @@ div.picvision {
 	
 }
 
-div.vision {
+div#vision {
 	flex: 0 1 600px;
 	/*border: solid 1px red;*/
 	margin-top: 60px;
 
 }
 
-div.vision h1 {
+div#vision h1 {
 	font-family: Exotc350 DmBd BT;
 	line-height: 100px;
 	color: #cc0044;
@@ -264,7 +290,7 @@ div.vision h1 {
 
 }
 
-div.vision p {
+div#vision p {
  	font-size: 15px;
  	text-align: justify;
  	font-family: Arial;
@@ -283,13 +309,13 @@ div.about3 {
 	/*border: solid 1px red;*/
 }
 
-div.mission {
+div#mission {
 	flex: 0 1 600px;
 	margin-top: 30px;
 	/*border: solid 1px red;*/
 }
 
-div.picmission {
+div#picmission {
 	background-image: url("../images/picmission.jpg");
 	background-position: center;
 	background-size: cover;
@@ -299,7 +325,7 @@ div.picmission {
 }
 
 
-div.mission h1 {
+div#mission h1 {
 	font-family: Exotc350 DmBd BT;
 	line-height: 100px;
 	color: #cc0044;
@@ -307,7 +333,7 @@ div.mission h1 {
 
 }
 
-div.mission p {
+div#mission p {
  	font-size: 15px;
  	text-align: justify;
  	font-family: Arial;
@@ -325,7 +351,7 @@ div.about4 {
 	/*border: solid 1px red;*/
 }
 
-div.piccore {
+div#piccore {
 	background-image: url("../images/piccore.jpg");
 	background-size: cover;
 	background-position: right;
@@ -335,23 +361,292 @@ div.piccore {
 
 }
 
-div.core {
+div#core {
 	flex: 0 1 500px;
 	margin-top: 50px;
 
 }
 
-div.core h1 {
+div#core h1 {
 	font-family: Exotc350 DmBd BT;
 	line-height: 70px;
 	color: #cc0044;
 	font-size: 40px;
 }
 
-div.core li {
+div#core li {
 	font-size: 22px;
  	text-align: justify;
  	font-family: Arial;
  	line-height: 44px;
  	color: #28283e;	
 }
+
+div.activities {
+	display: flex;
+	width: 100%;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	/* border: solid 1px red; */
+	background-color: #000033;
+	margin: 50px 0px 50px 0px;
+}
+
+div.activities h1 {
+	font-family: Exotc350 DmBd BT;
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+	background: red;
+	padding: 0px 16px;
+}
+
+section.advert {
+	width: 100%;
+	height: 600px;
+	padding: 50px 0px;
+	/* border: solid 1px red; */
+	display: flex;
+	justify-content: space-around;
+}
+
+div.girl {
+	width: 311px;
+	height: 405px;
+	padding: 0px 10px;
+	/* border: solid 1px red; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5), 0 6px 0 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+
+}
+
+div.girl h1 {
+	font-family: Exotc350 DmBd BT;
+	line-height: 40px;
+	font-size: 18px;
+	color: #41464b; 
+	margin-left: -20px;
+
+
+}
+div.girl p{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: #64707b;
+	font-size: 15px;
+
+}
+
+div.girl a {
+	bottom: 5px;
+	position: absolute;
+}
+
+div.skill {
+	width: 311px;
+	height: 405px;
+	padding: 0px 10px;
+	/* border: solid 1px red; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5), 0 6px 0 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+
+}
+
+div.skill h1 {
+	font-family: Exotc350 DmBd BT;
+	line-height: 40px;
+	font-size: 18px;
+	color: #41464b; 
+	margin-left: -2px;
+
+
+}
+div.skill p{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: #64707b;
+	font-size: 15px;
+
+}
+
+div.skill a {
+	bottom: 5px;
+	position: absolute;
+}
+
+div.fyn {
+	width: 311px;
+	height: 405px;
+	padding: 0px 10px;
+	/* border: solid 1px red; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5), 0 6px 0 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+}
+div.fyn h1 {
+	font-family: Exotc350 DmBd BT;
+	line-height: 40px;
+	font-size: 18px;
+	color: #41464b; 
+	margin-left: -90px;
+
+}
+div.fyn p{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: #64707b;
+	font-size: 15px;
+}
+
+div.fyn a {
+	bottom: 5px;
+	position: absolute;
+}
+
+
+div.health {
+	width: 311px;
+	height: 405px;
+	padding: 0px 10px;
+	/* border: solid 1px red; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5), 0 6px 0 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+
+}
+
+div.health h1 {
+	font-family: Exotc350 DmBd BT;
+	line-height: 40px;
+	font-size: 17px;
+	color: #41464b; 
+	margin-left: -5px;
+}
+div.health p{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: #64707b;
+	font-size: 15px;
+
+}
+
+div.health a {
+	bottom: 5px;
+	position: absolute;
+}
+
+footer {
+	/* display: flex; */
+	background: #252525;
+	height: 430px;
+	width: 100%;
+}
+
+div.footercontainer {
+	display: flex;
+	width: 1140px;
+	height: 354px;
+	margin: 0px 113px;
+	padding: 80px 15px 0px;
+	/* border: solid 1px red; */
+
+} 
+
+div.littleabout {
+	display: flex;
+	flex-direction: column;
+	width: 285px;
+	height: 265px;
+	padding: 0px 15px;
+	/* border: solid 1px red; */
+	/* align-items: flex-start; */
+
+	}
+
+div.links {
+	/* display: flex; */
+	/* flex-direction: column; */
+	width: 285px;
+	height: 265px;
+	padding: 0px 15px;
+	/* border: solid 1px red; */
+}
+
+div.downlogo {
+	display: flex;
+	flex-direction: column;
+	width: 285px;
+	height: 265px;
+	padding: 0px 15px;
+	/* border: solid 1px red; */
+	justify-content: center;
+	align-items: center;
+
+}
+footer img {
+	width: 200px;
+	height: auto;
+}
+
+div.contact {
+	display: flex;
+	flex-direction: column;
+	width: 285px;
+	height: 265px;
+	padding: 0px 15px;
+	/* border: solid 1px red; */
+}
+
+footer h1 {
+	font-family: Exotc350 DmBd BT;;
+	color: yellow;
+	font-size: 18px;
+	line-height: 40px;
+}
+footer a {
+	color: #e6e6e6;
+	font-family: calibri;
+	line-height: 25px;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+footer a:hover {
+	background: red;
+}
+
+footer li {
+	width: 255px;
+	border-bottom: solid 1px #333333;
+	list-style: none;
+}
+
+footer p {
+	color: #e6e6e6;
+	font-family: calibri;
+	text-align: left;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+div.copy {
+	/* border: solid 1px red; */
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	height: 70px;
+	justify-content: center;
+
+}
+
