@@ -19,8 +19,8 @@ header {
 }
 
 header img {
-	width: 180px;
-	height: 90px;
+	width: 100px;
+	height: auto;
 	/* position: absolute; */
 	margin-top: 20px;
 	margin-left: 20px;
@@ -240,7 +240,7 @@ div#whowe {
 div#whowe h1 {
 	font-family: Exotc350 DmBd BT;
 	line-height: 90px;
-	color: #e6004c;
+	color:white;
 	font-size: 40px;
 
 
@@ -285,7 +285,7 @@ div#vision {
 div#vision h1 {
 	font-family: Exotc350 DmBd BT;
 	line-height: 100px;
-	color: #cc0044;
+	color: #4d4d4d;
 	font-size: 40px;
 
 }
@@ -328,7 +328,7 @@ div#picmission {
 div#mission h1 {
 	font-family: Exotc350 DmBd BT;
 	line-height: 100px;
-	color: #cc0044;
+	color: #4d4d4d;
 	font-size: 40px;
 
 }
@@ -370,17 +370,62 @@ div#core {
 div#core h1 {
 	font-family: Exotc350 DmBd BT;
 	line-height: 70px;
-	color: #cc0044;
+	color: #4d4d4d;
 	font-size: 40px;
 }
 
 div#core li {
-	font-size: 22px;
+	font-size: 15px;
  	text-align: justify;
  	font-family: Arial;
  	line-height: 44px;
  	color: #28283e;	
 }
+
+div.about5 {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: stretch;
+	height: 400px;
+	width: 100%;
+	flex-flow: row no-wrap;
+	margin: 50px 0 0 0;
+	/*border: solid 1px red;*/
+}
+
+div#uniqueness {
+	flex: 0 1 600px;
+	margin-top: 30px;
+	/*border: solid 1px red;*/
+}
+
+div#picuniqueness {
+	background-image: url("../images/picunique.jpg");
+	background-position: center;
+	background-size: cover;
+	/*border: solid 1px red;*/
+	flex: 0 0 500px;
+	height: 400px;
+}
+
+
+div#uniqueness h1 {
+	font-family: Exotc350 DmBd BT;
+	line-height: 100px;
+	color: #4d4d4d;
+	font-size: 40px;
+	marging-left: 200px;
+
+}
+
+div#uniqueness p {
+ 	font-size: 15px;
+ 	text-align: justify;
+ 	font-family: Arial;
+ 	line-height: 24px;
+ 	color: #28283e;
+}
+
 
 div.activities {
 	display: flex;
@@ -389,17 +434,15 @@ div.activities {
 	justify-content: center;
 	align-items: center;
 	/* border: solid 1px red; */
-	background-color: #000033;
-	margin: 50px 0px 50px 0px;
+	/* background-color: #000033; */
+	margin: 70px 0px 50px 0px;
 }
 
 div.activities h1 {
 	font-family: Exotc350 DmBd BT;
 	font-size: 50px;
 	font-weight: bold;
-	color: white;
-	background: red;
-	padding: 0px 16px;
+	border-bottom: double 2px #252525;
 }
 
 section.advert {

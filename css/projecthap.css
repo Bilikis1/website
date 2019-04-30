@@ -19,8 +19,8 @@ header {
 }
 
 header img {
-	width: 180px;
-	height: 90px;
+	width: 100px;
+	height: auto;
 	/* position: absolute; */
 	margin-top: 20px;
 	margin-left: 20px;
@@ -169,20 +169,126 @@ div.methonav a {
 div.methonav a:hover {
 	text-decoration: underline;
 }
-div.projecthap {
+
+div.contentwrap {
 	width:100%;
 	height: auto;
 	display: flex;
 	justify-content: center;
     flex-direction: column;
 	align-items: center;
+	/* border: 1px solid red; */
+	padding: 20px 0 40px 0; 
+
 }
 
-div.projecthap img {
-    width: 80%;
-    height: auto;
-	/* flex-direction: column; */
-	padding: 50px 0 0 0;
+div.projecthap {
+	width: 1300px;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	/* border: solid 1px red; */
+	flex-wrap: wrap;
+}
+
+div.hhap {
+	display: flex;
+	/* border: 1px solid red; */
+	justify-content: flex-start;
+	align-items: center;
+	width: 1200px;
+	margin-bottom: 30px;
+
+
+	
+}
+div.hhap h1 {
+	font-family: Calibri;
+	text-align: center;
+}
+
+
+div.hhap img {
+	width: 100px;
+	height: 100px;
+	margin-right: 270px;
+}
+
+div.one {
+	width: 700px;
+	height: 400px;
+	/* border: solid 1px red; */
+
+}
+div.one a {
+	text-decoration: none;
+	font-family: calibri;
+}
+div.two {
+	width: 450px;
+	height: 300px;
+	/* border: solid 1px red; */
+	background-image: url("../images/pic1hap.jpg");
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: space-around;
+	margin: 10px 0 10px 0;
+}
+
+div.four {
+	width: 450px;
+	height: 300px;
+	/* border: solid 1px red; */
+	background-image: url("../images/pic2hap.jpg");
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	padding: 10px 0 10px 0;
+	margin: 10px 0 10px 0;
+
+
+}
+
+div.six{
+	width: 450px;
+	height: 300px;
+	/* border: solid 1px red; */
+	background-image: url("../images/pic3hap.jpg");
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	padding: 10px 0 10px 0;
+	margin: 10px 0 10px 0;
+
+}
+
+div.basehap {
+	/* display: flex; */
+	/* border: 1px solid red; */
+	justify-content: flex-start;
+	align-items: center;
+	width: 1200px;
+}
+
+div.contentwrap h2 {
+	font-family: Exotc350 DmBd BT;
+	/* color: #252525; */
+	padding: 10px 0 10px 0;
+	color: #000033;
+	text-decoration: underline;
+}
+
+div.contentwrap p {
+	font-family: calibri;
+	color: #252525;
+	line-height: 22px;
+	font-size: 17px; 
+	text-align: justify;
+	/* padding: 0 80px 0 80px; */
 }
 
 footer {

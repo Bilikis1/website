@@ -19,8 +19,8 @@ header {
 }
 
 header img {
-	width: 180px;
-	height: 90px;
+	width: 100px;
+	height: auto;
 	/* position: absolute; */
 	margin-top: 20px;
 	margin-left: 20px;
@@ -220,6 +220,7 @@ div.girleducation p {
 	/* padding: 8px 8px; */
 	/* background-color: #000033; */
 	line-height: 22px;
+	text-align: justify;
 }
 
 div.pic2ge {
