@@ -6,81 +6,157 @@
   	<meta name="keywords" content="Women and Girls NGO in Niger State, Youth Organization in Niger State, Girls education in Niger State, Women and girls empowerment in Niger State, Women and Girls NGO in Nigeria, Youth Organization in Nigeria, Girls education in Nigeria, Women and girls empowerment in Nigeria">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/girlseducation.css">
+	<link rel="stylesheet" type="text/css" href="css/headerfooter.css">
+
 </head>
 <body>
-	<header>
-		<a href="images/hmilogopng.png"><img src="images/hmilogopng.png"></a>
-		<h1>Welcome to HMI</h1>
-	</header> 
-	<nav id="hminav">
-			<ul>
-				<li><a href="index.html">About
-					<span class="arrow">&#x25BC;</span>
-				</a>
-					<ul class="submenu">
-						<li><a href="index.html#whowe">Who We Are</a></li>
-						<li><a href="index.html#vision">Vision</a></li>
-						<li><a href="index.html#mission">Mission</a></li>
-						<li><a href="index.html#core">Core Values</a></li>
-					</ul>
-				</li>
-				<li><a href="#">What We do
-					<span class="arrow">&#x25BC;</span>
-				</a>
-					<ul class="submenu">
-						<li><a href="girlseducation.html">Girls Education</a></li>
-						<li><a href="health.html">Health</a></li>
-						<li><a href="economic.html">Economic Empowerment</a></li>
-						<li><a href="fyn.html">Youth Development</a></li>
-						<li><a href="#">Democracy and Good Governance</a></li>
-						<li><a href="#">Peace</a></li>
-					</ul>
-				</li>
-				<li><a href="fyn.html">Youth</a></li>
-				<li><a href="#">Projects
-					<span class="arrow">&#x25BC;</span>
-				</a>
-					<ul class="submenu">
-						<li><a href="projectprog.html">PROG(Promotion of Girl Child Education</a></li>
-						<li><a href="codeme.html">CODE-ME</a></li>
-						<li><a href="projecthap.html">HAP(Health Awareness Program)</a></li>
-						<li><a href="projectvow.html">VOW(Vocational Skills for Rural Women)</a></li>
-						<li><a href="#">Vote Make Nigeria Better</a></li>
-						<li><a href="projectflip.html">FLIP(Functional Literacy Program for Women)</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Impacts
-					<span class="arrow">&#x25BC;</span>
-				</a>
-				<ul class="submenu">
-					<li><a href="progimpact.html">PROG Impacts</a></li>
-					<li><a href="hapimpacts.html">HAP Impacts</a></li>
-					<li><a href="#">FLIP Impacts</a></li>
-					<li><a href="#">VOW Impacts</li>
-					<li><a href="#">Vote Make Nigeria Better</a></li>
-				</ul>
-				</li>
-				<li><a href="#">Take Action
-					<span class="arrow">&#x25BC;</span>
-				</a>
-					<ul class="submenu">
-						<li><a href="#">Donate</a></li>
-						<li><a href="#">Partner</a></li>
-						<li><a href="#">Sponsor</a></li>
-						<li><a href="#">Volunteer</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Gallery</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Blog</a></li>
-			</ul>
-		</nav>
-
-	<div class="girleducation">
+	
+	<div class="girleducationwrapper">
+			<div class="codemewrapper">
+					<header>
+						<input id="searchbox" type="text" placeholder="Search">
+							<!-- <img id="search" src="images/magnifying-glass.svg"> -->
+						<h1>Welcome to HMI</h1> 
+						<div class="logoham">
+							<a href="images/hmilogopng.png"><img src="images/hmilogopng.png"></a> 
+							<div class="hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</div>
+						</div>
+						
+					</header> 
+					<nav class="mobile">
+					<div id="myNav" class="overlay">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						
+						<div class="overlay-content">
+							<li class="dropdown">
+								<a href="#" class="dropbtn home">ABOUT US<span class="arrow">&#x25BC;</span></a>
+								<div class="dropdown-content">
+								<a href="index.html#whowe">Who We Are</a>
+								<a href="index.html#vision">Vision</a>
+								<a href="index.html#mission">Mission</a>
+								<a href="index.html#core">Core Values</a>
+								</div>
+							</li><hr>
+							<li class="dropdown">
+								<a href="#">WHAT WE DO<span class="arrow">&#x25BC;</span></a>
+								<div class="dropdown-content">
+									<a href="girlseducation.html">Girls Education</a>
+									<a href="health.html">Health</a>
+									<a href="economic.html">Economic Empowerment</a>
+									<a href="fyn.html">Youth Development</a>
+									<a href="#">Democracy and Good Governance</a>
+								</div>
+							</li><hr>
+							<a href="fyn.html">FYN</a><hr>
+							<li class="dropdown">
+								<a href="#">PROJECTS<span class="arrow">&#x25BC;</span></a>
+								<div class="dropdown-content">
+									<a href="projectprog.html">PROG<br>(Promotion of Girl Child Education</a>
+									<a href="codeme.html">CODE-ME</a>
+									<a href="projecthap.html">HAP<br>(Health Awareness Program)</a>
+									<a href="projectvow.html">VOW<br>(Vocational Skills for Rural Women)</a>
+									<a href="makenigeriabetter.html">Make Nigeria Better</a>
+									<a href="projectflip.html">FLIP<br>(Functional Literacy Program for Women)</a>
+								</div>
+							</li><hr>
+							<li class="dropdown">
+									<a href="#">IMPACTS<span class="arrow">&#x25BC;</span></a>
+									<div class="dropdown-content">
+										<a href="progimpact.html">PROG Impacts</a>
+										<a href="hapimpacts.html">HAP Impacts</a>
+										<a href="#">FLIP Impacts</a>
+										<a href="#">VOW Impacts</a>
+										<a href="#">Make Nigeria Better</a>
+									</div>
+								</li><hr>
+								<li class="dropdown">
+									<a href="#">GET INVOLVED<span class="arrow">&#x25BC;</span></a>
+									<div class="dropdown-content">
+										<a href="#">Sponsor</a>
+										<a href="#">Partner</a>
+										<a href="#">Membership</a>
+										<a href="#">Volunteer</a>
+									</div>
+								</li><hr>
+								<li class="dropdown">
+									<a href="#">MEDIA CENTER<span class="arrow">&#x25BC;</span></a>
+									<div class="dropdown-content">
+											<a href="#">Gallery</a>
+											<a href="#">Event</a>
+											<a href="#">News</a>
+											<a href="#">Blog</a>
+									</div>
+								</li><hr>
+								<a href="#">DONATE</a><hr>
+						</div>
+						
+					</div>
+					</nav>
+			
+					<nav class="desktop">
+						<div>
+							<li class="dropdown">
+								<a href="index.html" class="dropbtn">About Us<span class="arrow">&#x25BC;</span></a>
+								<div class="dropdown-content">
+									<a href="index.html#whowe">Who We Are</a>
+									<a href="index.html#vision">Vision</a>
+									<a href="index.html#mission">Mission</a>
+									<a href="index.html#core">Core Values</a>
+								</div>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropbtn">What We do<span class="arrow">&#x25BC;</span></a>
+								<div class="dropdown-content">
+									<a href="girlseducation.html">Girls Education</a>
+									<a href="health.html">Health</a>
+									<a href="economic.html">Economic Empowerment</a>
+									<a href="fyn.html">Youth Development</a>
+									<a href="#">Democracy and Good Governance</a>
+								</div>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropbtn">Projects<span class="arrow">&#x25BC;</span>                                                                                                                                                                                                                                                                                                                                                                          </a>
+								<div class="dropdown-content">
+									<a href="projectprog.html">PROG(Promotion of Girl Child Education</a>
+									<a href="codeme.html">CODE-ME</a>
+									<a href="projecthap.html">HAP(Health Awareness Program)</a>
+									<a href="projectvow.html">VOW(Vocational Skills for Rural Women)</a>
+									<a href="makenigeriabetter.html">Make Nigeria Better</a>
+									<a href="projectflip.html">FLIP(Functional Literacy Program for Women)</a>
+								</div>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropbtn">Impacts<span class="arrow">&#x25BC;</span></a>
+								<div class="dropdown-content">
+									<a href="progimpact.html">PROG Impacts</a>
+									<a href="hapimpacts.html">HAP Impacts</a>
+									<a href="#">FLIP Impacts</a>
+									<a href="#">VOW Impacts</a>
+									<a href="#">Make Nigeria Better</a>
+								</div>
+							</li>
+							<li class="dropdown"><a href="#" class="dropbtn">Get Involved<span class="arrow">&#x25BC;</span></a>
+								<div class="dropdown-content">
+									<a href="#">Sponsor</a>
+									<a href="#">Partner</a>
+									<a href="#">Membership</a>
+									<a href="#">Volunteer</a>
+								</div>
+							</li>
+							<li class="dropdown"><a href="#" class="dropbtn">Media Center<span class="arrow">&#x25BC;</span></a>
+								<div class="dropdown-content">
+									<a href="#">Gallery</a>
+									<a href="#">Event</a>
+									<a href="#">News</a>
+									<a href="#">Blog</a>
+								</div>
+							</li>
+							<li class="dropdown"><a href="#" class="dropbtn">Donate</a></li>
+						</div>
+					</nav>
 		<div class="pic1ge">
-			<!-- <img src="images/pic1ge.jpg" alt="girl"> -->
 		</div>
-		<div class="getext">
+		<div class="getext1">
 			<h1>Girl Child Education</h1>
 			<p>Girl child education is the greatest investment we all can be a part of in other to alleviate 
 				poverty and penury. It has a very incredible multiplying positive impact for generations to come.<br><br>     
@@ -90,72 +166,78 @@
 				she possesses the values, skills, self-reliance and self-confidence that she needs to be a better parent, great entrepreneur and citizen.
 				 Girls are often marginalized and are out of school due to their gender status. Their chances of obtaining a qualitative and quantitative
 				  education are even smaller if they are from poor family background, disabled or in rural communities.</p>
-			<h1>The Issues</h1>
-			<p>-  There are 31 million girls of primary school age out of school compare to the 4 million fewer boys around the world. Of these 17 million are expected never to enter school. In Nigeria, there are almost five and a half million girls out of school (UNESCO Oct. 2013).<br>
-			   -      In sub-Saharan Africa, women with no education have 6.7 births, on average. The figure falls to 5.8 for those with primary education and more than halves to 3.9 for those with secondary education.<br> 
-			   - 10% fewer girls would become pregnant under 17 years in sub-Saharan Africa and South and West Asia if they all had a primary education Almost 60% fewer girls would become pregnant under 17 years in sub-Saharan Africa and South and West Asia if they all had a secondary education.<br>
-			   - In sub-Saharan Africa, if all women completed primary education, maternal deaths would be reduced by 70%, saving almost 50,000 lives.<br>
-			   - The rural areas are predominantly affected by:<br> 
-					- Inadequate awareness on the importance of education.<br>    
-					- Insufficient (and in worst case scenario, they lack) learning enabling environment, such as schools.<br>
-					- Where there are schools, the schools are below standards, lacking structural and essential infrastructural facilities such as classrooms, laboratories, tables and chairs, reading materials, etc.<br>
-					- Lack of good road networks to link the learning centers.<br>
-					- Unavailability of qualified teachers particularly at the basic level</p>
-			<h1>Our Approach</h1>
-			<p>HMI is working closely with relevant concerned stakeholders to ensure that teenage girls are not only enrolled in school but also stay in school, in other to acquire qualitative education and complete schooling (Nursery, Primary and Secondary Education). <br><br> 
-				We believe that the sum total our quota with the accumulation of the efforts of these stakeholders, will be very significant in giving the women and girls in Africa the privilege of education that they deserve.<br><br> 
-				We engage in social protection measures such as cash transfer to help with the cost of –<br> 
-				·	School fees so that Out of School Girls (OOS) who are missing out of vital primary and secondary education are enrolled in school and those already enrolled stay in school.<br>
-				·	School uniforms, school bags and learning materials like - exercise books, text books, pencils, Pen, etc.<br>
-				·	Learning devices like computers and so on.<br><br> 
-				We organize awareness programmes that engage communities, particularly in the rural areas to ensure that everyone understands the need of female child education. We let them know that if girls are left out of education, many communities will miss the great potential for development.<br><br> 	
-						
-				With the aid of our facilitators, we are able to pinpoint and beseech some privileged humanitarian philanthropic individuals, to extend their magnanimity towards sponsoring the education of as many of the youths within their locality.<br><br> 
-				
-				We engage the local community heads in discussions on the need to sensitize their people on the essence of education.<br><br> 
-				
-				We liaise with the authorities in charge of such community and likewise private investors, as regards the urgent need in the construction schools with essential infrastructural facilities, good roads and bridges to facilitate easy access to learning centers</p>
+			<h2>The Issues</h2>
+			<p>-  There are 31 million girls of primary school age out of school compare to the 4 million fewer boys around the world. Of these 17 million are expected never to enter school. In Nigeria, there are almost five and a half million girls out of school (UNESCO Oct. 2013).<br><br>
+			   -  In sub-Saharan Africa, women with no education have 6.7 births, on average. The figure falls to 5.8 for those with primary education and more than halves to 3.9 for those with secondary education.<br><br> 
+			  
 		</div>
 		<div class="pic2ge">
 			<!-- <img src="images/pic2ge.jpg" alt="girls"> -->
 		</div>
-
-	</div>
-	
-	<footer>
-		<div class="footercontainer">
-			<div class="littleabout">
-				<h1>Her Matter Initiative (HMI)</h1>
-				<p>HMI is investing qualitative resources into ensuring that Nigerian women and
-				girls are empowered towards the actualization of the gender angle the UN
-				Sustainable Development Goals (SDGs).</p>
-			</div>
-			<div class="links">
-				<h1>Useful links</h1>
-				<li><a href="#">About us</a></li>
-				<li><a href="#">What we do</a></li>
-				<li><a href="#">Youth</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Impacts</a></li>
-				<li><a href="#">Donate</a></li>
-				<li><a href="#">Take action</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Blog</a></li>
-			</div>
-			<div class="downlogo">
-				<img src="images/pnglogo2.png">
-			</div>
-			<div class="contact">
-				<h1>Get in touch</h1>
-				<p>Adjacent Handmade Nursery/Primary Sch.,<br>
-				Gbaiko, Bosso, Minna, Niger State,<br>
-				Nigeria.</p><br><br>
-				<p>Tel: 07063856763, 07085181196.</p>
-				<p>Email: hermatterinitiative@gmail.com</p>
-
-			</div>
+		<div class="text2">
+			<p>- 10% fewer girls would become pregnant under 17 years in sub-Saharan Africa and South and West Asia if they all had a primary education Almost 60% fewer girls would become pregnant under 17 years in sub-Saharan Africa and South and West Asia if they all had a secondary education.<br><br>
+			- In sub-Saharan Africa, if all women completed primary education, maternal deaths would be reduced by 70%, saving almost 50,000 lives.<br><br>
+			- The rural areas are predominantly affected by:<br><br> 
+				 - Inadequate awareness on the importance of education.<br><br>    
+				 - Insufficient (and in worst case scenario, they lack) learning enabling environment, such as schools.<br><br>
+				 - Where there are schools, the schools are below standards, lacking structural and essential infrastructural facilities such as classrooms, laboratories, tables and chairs, reading materials, etc.<br><br>
+				 - Lack of good road networks to link the learning centers.<br><br>
+				 - Unavailability of qualified teachers particularly at the basic level</p>
+		 <h2>Our Approach</h2>
+		 <p>HMI is working closely with relevant concerned stakeholders to ensure that teenage girls are not only enrolled in school but also stay in school, in other to acquire qualitative education and complete schooling (Nursery, Primary and Secondary Education). <br><br> 
+			 We believe that the sum total our quota with the accumulation of the efforts of these stakeholders, will be very significant in giving the women and girls in Africa the privilege of education that they deserve.<br><br> 
+			 We engage in social protection measures such as cash transfer to help with the cost of –<br> 
+			 ·	School fees so that Out of School Girls (OOS) who are missing out of vital primary and secondary education are enrolled in school and those already enrolled stay in school.<br>
+			 ·	School uniforms, school bags and learning materials like - exercise books, text books, pencils, Pen, etc.<br>
+			 ·	Learning devices like computers and so on.<br><br> 
+			 We organize awareness programmes that engage communities, particularly in the rural areas to ensure that everyone understands the need of female child education. We let them know that if girls are left out of education, many communities will miss the great potential for development.<br><br> 	
+					 
+			 With the aid of our facilitators, we are able to pinpoint and beseech some privileged humanitarian philanthropic individuals, to extend their magnanimity towards sponsoring the education of as many of the youths within their locality.<br><br> 
+			 
+			 We engage the local community heads in discussions on the need to sensitize their people on the essence of education.<br><br> 
+			 
+			 We liaise with the authorities in charge of such community and likewise private investors, as regards the urgent need in the construction schools with essential infrastructural facilities, good roads and bridges to facilitate easy access to learning centers</p>
 		</div>
-		<div class="copy"><p>Copyrights &copy;2019 All rights reserved by Her Matter Initiative(HMI).</p></div>	
-	</footer>
+		<footer>
+			<div class="footercontainer">
+				<div class="littleabout">
+					<h1>Her Matter Initiative (HMI)</h1>
+					<p>HMI is investing qualitative resources into ensuring that Nigerian women and
+					girls are empowered towards the actualization of the gender angle the UN
+					Sustainable Development Goals (SDGs).</p>
+				</div>
+				<div class="links">
+					<h1>Useful links</h1>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">What we do</a></li>
+					<li><a href="#">Youth</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Impacts</a></li>
+					<li><a href="#">Donate</a></li>
+					<li><a href="#">Take action</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Blog</a></li>
+				</div>
+				<div class="downlogo">
+						<a href="images/hmilogopng.png"><img  id="downlogo" src="images/hmilogopng.png"></a>
+				</div>
+				<div class="contact">
+					<h1>Get in touch</h1>
+					<p>Adjacent Handmade Nursery/Primary Sch.,Gbaiko, Bosso, Minna, Niger State,<br>
+					Nigeria.</p>
+					<p>Tel: 07063856763, 07085181196.</p>
+					<p>Email: hermatterinitiative@gmail.com</p>
+					<div class="social"><a href="https://www.facebook.com/hermatterinitiative1/?modal=admin_todo_tour"><img  src="images/facebook.svg"></a><a href="#"><img src="images/twitter.svg"></a><a href="#"><img src="images/instagram.svg"></a><a href="https://hermatterinitiative@gmail.com"><img src="images/gmail.svg"></a>
+						<a href="#"><img src="images/youtube.svg"></a></div>
+				</div>
+
+			</div>
+			<div class="copy">
+				<p>Copyrights &copy;2019.<br> All rights reserved by Her Matter Initiative(HMI).</p>
+			</div>
+		</footer>
+	</div>
+	<script src="JS/jscode.js"></script>
+
 </body>
 </html>

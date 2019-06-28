@@ -9,225 +9,67 @@ body {
 	background-image: url("../images/translogo.png");
 }
 
-header {
-	display: flex;
-	width: 100%;
-	height: 140px;
-	background-image: url("../images/translogo.png");
-	/* position: relative; */
-}
-
-header img {
-	width: 100px;
-	height: auto;
-	/* position: absolute; */
-	margin-top: 20px;
-	margin-left: 20px;
-}
-
-header h1 {
-	position: absolute;
-	margin-left: 500px;
-	top: 50px; 
-	font-family: Exotc350 DmBd BT;
-	color: red;
-	font-size: 28px;
-	letter-spacing: 15px; 
-
-}
-
-#hminav a {
-	color: #fff;
-	background: #000033;
-	display: block;
-	/* height: 60px; */
-	font-family: Exotc350 Dmbd BT;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-decoration: none;
-	transition: background 0.45s;
-	padding: 14px 16px;
-}
-
-#hminav a:hover {
-	background: red;
-}
-
-#hminav ul {
-	list-style: none;
-	display: flex;
-}
-
-#hminav li {
-	width: 150%;
-	text-align: center; 
-	position: relative;
-}
-
-#hminav li:hover .submenu > li {	
-	display: block;
-	top: 0px;
-}
-
-.submenu li {
-	display: none;
-	position: absolute;
-	top: 0px;
-	text-align: left;
-}
-
-.submenu {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	width: 100%;
-}
-
-.arrow {
-	font-size: 10px;
-	left: 6px;
-}
-
-div.firstpic {
-/*	position: relative;
-*/	display: flex;
-	/* margin-top: 40px; */
-	height: 730px;
-	width: 100%;
-	background-image: url("../images/picture.jpg");
-	background-repeat: no-repeat;
-	background-size: cover; 
-	/*border: solid 1px red;*/
-	flex-direction: column;
-	align-items: center; 
-
-
-}
-
-div.h1p {
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
-	justify-content: center;
-	/*border: solid 1px red;*/
-	background: rgba(38,38,38,0.5);
-	margin-top: 400px;
-	width: 1000px;
-	height: 200px;
-	margin-bottom: 50px
-
-
-}
-
-div.h1p h1 {
-	text-align: center;
-	font-size: 35px;
-	font-family: Exotc350 DmBd BT;
-	color: white;
-
-}
-div.h1p p {
-	text-align: center;
-	font-size: 30px; 
-	color: white;
-	font-family: ErasDemiITC;
-	line-height: 40px;
-}
-
-#learn {
-	font-family: Exotc350 DmBd BT;
-	font-size: 20px;
-	color: white;
-	font-weight: bolder;
-}
-
-div.methonav {
-	display: flex;
-	flex-flow: row no-wrap;
-	/*border: solid 1px red;*/
-	align-items: center;
-}
-
-div.methonav a {
-	color: white;
-	padding: 0px 8px;
-	font-family: calibri;
-	font-size: 16px;
-	text-decoration: none;
-	font-weight: bolder;
-	color: #ffcc00;
-	text-transform: uppercase;
-	border-right: solid 2px white;
-}
-
-#last {
-	border: none;
-}
-
-div.methonav a:hover {
-	text-decoration: underline;
-}
-
-div.projectflip {
-	width:100%;
+div.flipwrapper {
+	width:319px;
 	height: auto;
 	display: flex;
 	justify-content: center;
     flex-direction: column;
-	align-items: center;
 	/* border: 1px solid red; */
-	padding: 20px 0 40px 0; 
-
-
+	margin: 0 auto;
 }
 
 div.headingflip {
 	display: flex;
+	flex-direction: column;
 	/* border: 1px solid red; */
-	justify-content: flex-start;
-	align-items: center;
-	width: 950px;
-	margin-bottom: 30px;
-	
+	justify-content: center;
+	width: 80%;
+	margin-bottom: 10px;
+	margin: 0 auto;
+	margin-top: 20px;
 }
 
 div.headingflip img {
-	width: 120px;
+	width: 15%;
 	height: auto;
-	margin-right: 75px;
+	/* margin-right: 75px; */
+	margin: 0 auto;
+	margin-bottom: 10px;
 }
 
 div.headingflip h1{
 	font-family: Calibri;
 	text-align: center;
+	font-size: 20px;
 }
 div.picflip {
-    width: 950px;
-    height: 650px;
+    width: 80%;
+    height: 200px;
 	background-image: url("../images/pic1flip.png");
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
+	background-repeat: no-repeat;
 	/* border: 1px solid red; */
 	display: flex;
 	justify-content: center;
-
+	margin: 0 auto;
 }
 
 div.bodyflip {
 	display: flex;
 	flex-direction: column;
-	width: 950px;
+	width: 80%;
 	height: auto;
 	/* border: 1px solid red; */
-	/* padding: 20px 200px 40px 200px;  */
+	margin: 0 auto;
 
 }
 
 div.bodyflip h2 {
 	font-family: Exotc350 DmBd BT;
 	/* color: #252525; */
-	padding: 30px 0 10px 0;
+	padding: 15px 0 10px 0;
 	color: #000033;
 	text-decoration: underline;
 }
@@ -241,115 +83,565 @@ div.bodyflip p {
 	/* padding: 0 80px 0 80px; */
 }
 
-div.bodyflip img {
-	width: 100%;
-	height: auto;
-	padding: 30px 0 30px 0;
+div.bodyimg {
+	width: 80%;
+    height: 150px;
+	background-image: url("../images/pic2flip.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 	/* border: 1px solid red; */
-
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
 }
 
-footer {
-	/* display: flex; */
-	background: #252525;
-	height: 430px;
-	width: 100%;
-}
+@media (min-width: 320px) and (max-width: 479px) {
 
-div.footercontainer {
-	display: flex;
-	width: 1140px;
-	height: 354px;
-	margin: 0px 113px;
-	padding: 80px 15px 0px;
-	/* border: solid 1px red; */
-
-} 
-
-div.littleabout {
-	display: flex;
-	flex-direction: column;
-	width: 285px;
-	height: 265px;
-	padding: 0px 15px;
-	/* border: solid 1px red; */
-	/* align-items: flex-start; */
+	div.flipwrapper {
+		width:478px;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		/* align-items: center; */
+		/* border: 1px solid red; */
+		/* padding: 20px 0 40px 0;  */
+		margin: 0 auto;
+	}
+	
+	div.headingflip {
+		display: flex;
+		flex-direction: column;
+		/* border: 1px solid red; */
+		justify-content: flex-start;
+		width: 80%;
+		margin-bottom: 30px;
+		margin: 0 auto;
+		height: 190px;
 
 	}
-
-div.links {
-	/* display: flex; */
-	/* flex-direction: column; */
-	width: 285px;
-	height: 265px;
-	padding: 0px 15px;
-	/* border: solid 1px red; */
+	
+	div.headingflip img {
+		width: 10%;
+		height: auto;
+		/* margin-right: 75px; */
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	
+	div.headingflip h1{
+		font-family: Calibri;
+		text-align: center;
+		font-size: 25px;
+	}
+	div.picflip {
+		width: 80%;
+		height: 250px;
+		background-image: url("../images/pic1flip.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		/* border: 1px solid red; */
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	
+	}
+	
+	div.bodyflip {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		height: auto;
+		/* border: 1px solid red; */
+		margin: 0 auto;
+	
+	}
+	
+	div.bodyflip h2 {
+		font-family: Exotc350 DmBd BT;
+		/* color: #252525; */
+		padding: 15px 0 10px 0;
+		color: #000033;
+		text-decoration: underline;
+	}
+	
+	div.bodyflip p {
+		font-family: calibri;
+		color: #252525;
+		line-height: 22px;
+		font-size: 17px; 
+		text-align: justify;
+		/* padding: 0 80px 0 80px; */
+	}
+	
+	div.bodyimg {
+		width: 80%;
+		height: 200px;
+		background-image: url("../images/pic2flip.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		/* border: 1px solid red; */
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	}
 }
 
-div.downlogo {
-	display: flex;
-	flex-direction: column;
-	width: 285px;
-	height: 265px;
-	padding: 0px 15px;
-	/* border: solid 1px red; */
-	justify-content: center;
-	align-items: center;
+@media (min-width: 480px) and (max-width: 767px) {
 
-}
-footer img {
-	width: 200px;
-	height: auto;
+	div.flipwrapper {
+		width:766px;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		/* align-items: center; */
+		/* border: 1px solid red; */
+		/* padding: 20px 0 40px 0;  */
+		margin: 0 auto;
+	}
+	
+	div.headingflip {
+		display: flex;
+		flex-direction: column;
+		/* border: 1px solid red; */
+		justify-content: center;
+		width: 80%;
+		margin-bottom: 30px;
+		margin: 0 auto;
+		height: 250px;
+	}
+	
+	div.headingflip img {
+		width: 10%;
+		height: auto;
+		/* margin-right: 75px; */
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	
+	div.headingflip h1{
+		font-family: Calibri;
+		text-align: center;
+		font-size: 30px;
+	}
+	div.picflip {
+		width: 80%;
+		height: 400px;
+		background-image: url("../images/pic1flip.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		/* border: 1px solid red; */
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	
+	}
+	
+	div.bodyflip {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		height: auto;
+		/* border: 1px solid red; */
+		margin: 0 auto;
+	
+	}
+	
+	div.bodyflip h2 {
+		font-family: Exotc350 DmBd BT;
+		/* color: #252525; */
+		padding: 15px 0 10px 0;
+		color: #000033;
+		text-decoration: underline;
+	}
+	
+	div.bodyflip p {
+		font-family: calibri;
+		color: #252525;
+		line-height: 22px;
+		font-size: 17px; 
+		text-align: justify;
+		/* padding: 0 80px 0 80px; */
+	}
+	
+	div.bodyimg {
+		width: 80%;
+		height: 300px;
+		background-image: url("../images/pic2flip.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		/* border: 1px solid red; */
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	}
 }
 
-div.contact {
-	display: flex;
-	flex-direction: column;
-	width: 285px;
-	height: 265px;
-	padding: 0px 15px;
-	/* border: solid 1px red; */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+	div.flipwrapper {
+		width:1022px;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		/* border: 1px solid red; */
+		margin: 0 auto;
+	}
+	
+	div.headingflip {
+		display: flex;
+		flex-direction: column;
+		/* border: 1px solid red; */
+		justify-content: center;
+		width: 80%;
+		margin-bottom: 30px;
+		margin: 0 auto;
+		height: 250px;
+	}
+	
+	div.headingflip img {
+		width: 5%;
+		height: auto;
+		/* margin-right: 75px; */
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	
+	div.headingflip h1{
+		font-family: Calibri;
+		text-align: center;
+		font-size: 35px;
+	}
+	div.picflip {
+		width: 80%;
+		height: 550px;
+		background-image: url("../images/pic1flip.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		/* border: 1px solid red; */
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	
+	}
+	
+	div.bodyflip {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		height: auto;
+		/* border: 1px solid red; */
+		margin: 0 auto;
+	
+	}
+	
+	div.bodyflip h2 {
+		font-family: Exotc350 DmBd BT;
+		/* color: #252525; */
+		padding: 15px 0 10px 0;
+		color: #000033;
+		text-decoration: underline;
+	}
+	
+	div.bodyflip p {
+		font-family: calibri;
+		color: #252525;
+		line-height: 22px;
+		font-size: 17px; 
+		text-align: justify;
+		/* padding: 0 80px 0 80px; */
+	}
+	
+	div.bodyimg {
+		width: 80%;
+		height: 400px;
+		background-image: url("../images/pic2flip.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		/* border: 1px solid red; */
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	}
 }
 
-footer h1 {
-	font-family: Exotc350 DmBd BT;;
-	color: yellow;
-	font-size: 18px;
-	line-height: 40px;
-}
-footer a {
-	color: #e6e6e6;
-	font-family: calibri;
-	line-height: 25px;
-	font-size: 15px;
-	text-decoration: none;
+@media (min-width: 1024px) and (max-width: 1200px) {
+
+	div.flipwrapper {
+		width:1199px;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		/* align-items: center; */
+		/* border: 1px solid red; */
+		/* padding: 20px 0 40px 0;  */
+		margin: 0 auto;
+	}
+		div.headingflip {
+		display: flex;
+		flex-direction: column;
+		/* border: 1px solid red; */
+		justify-content: center;
+		width: 80%;
+		margin-bottom: 30px;
+		margin: 0 auto;
+		height: 250px;
+	}
+	
+	div.headingflip img {
+		width: 5%;
+		height: auto;
+		/* margin-right: 75px; */
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	
+	div.headingflip h1{
+		font-family: Calibri;
+		text-align: center;
+		font-size: 35px;
+	}
+	div.picflip {
+		width: 80%;
+		height: 550px;
+		background-image: url("../images/pic1flip.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		/* border: 1px solid red; */
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	
+	}
+	
+	div.bodyflip {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		height: auto;
+		/* border: 1px solid red; */
+		margin: 0 auto;
+	
+	}
+	
+	div.bodyflip h2 {
+		font-family: Exotc350 DmBd BT;
+		/* color: #252525; */
+		padding: 15px 0 10px 0;
+		color: #000033;
+		text-decoration: underline;
+	}
+	
+	div.bodyflip p {
+		font-family: calibri;
+		color: #252525;
+		line-height: 22px;
+		font-size: 17px; 
+		text-align: justify;
+		/* padding: 0 80px 0 80px; */
+	}
+	
+	div.bodyimg {
+		width: 80%;
+		height: 400px;
+		background-image: url("../images/pic2flip.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		/* border: 1px solid red; */
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	}
 }
 
-footer a:hover {
-	background: red;
+@media (min-width: 1201px) and (max-width: 1366px) {
+
+	div.flipwrapper {
+		width:1365px;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		/* border: 1px solid red; */
+		margin: 0 auto;
+	}
+		div.headingflip {
+		display: flex;
+		flex-direction: column;
+		/* border: 1px solid red; */
+		justify-content: center;
+		width: 80%;
+		margin-bottom: 30px;
+		margin: 0 auto;
+		height: 250px;
+	}
+	
+	div.headingflip img {
+		width: 5%;
+		height: auto;
+		/* margin-right: 75px; */
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	
+	div.headingflip h1{
+		font-family: Calibri;
+		text-align: center;
+		font-size: 40px;
+	}
+	div.picflip {
+		width: 80%;
+		height: 750px;
+		background-image: url("../images/pic1flip.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		/* border: 1px solid red; */
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	
+	}
+	
+	div.bodyflip {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		height: auto;
+		/* border: 1px solid red; */
+		margin: 0 auto;
+	
+	}
+	
+	div.bodyflip h2 {
+		font-family: Exotc350 DmBd BT;
+		/* color: #252525; */
+		padding: 15px 0 10px 0;
+		color: #000033;
+		text-decoration: underline;
+	}
+	
+	div.bodyflip p {
+		font-family: calibri;
+		color: #252525;
+		line-height: 22px;
+		font-size: 17px; 
+		text-align: justify;
+		/* padding: 0 80px 0 80px; */
+	}
+	
+	div.bodyimg {
+		width: 80%;
+		height: 500px;
+		background-image: url("../images/pic2flip.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		/* border: 1px solid red; */
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	}
 }
 
-footer li {
-	width: 255px;
-	border-bottom: solid 1px #333333;
-	list-style: none;
+@media (min-width: 1367px) {
+
+	div.flipwrapper {
+		width:100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		/* border: 1px solid red; */
+		margin: 0 auto;
+	}
+		div.headingflip {
+		display: flex;
+		flex-direction: column;
+		/* border: 1px solid red; */
+		justify-content: center;
+		width: 80%;
+		margin-bottom: 30px;
+		margin: 0 auto;
+		height: 250px;
+	}
+	
+	div.headingflip img {
+		width: 5%;
+		height: auto;
+		/* margin-right: 75px; */
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	
+	div.headingflip h1{
+		font-family: Calibri;
+		text-align: center;
+		font-size: 40px;
+	}
+	div.picflip {
+		width: 80%;
+		height: 750px;
+		background-image: url("../images/pic1flip.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		/* border: 1px solid red; */
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	
+	}
+	
+	div.bodyflip {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		height: auto;
+		/* border: 1px solid red; */
+		margin: 0 auto;
+	
+	}
+	
+	div.bodyflip h2 {
+		font-family: Exotc350 DmBd BT;
+		/* color: #252525; */
+		padding: 15px 0 10px 0;
+		color: #000033;
+		text-decoration: underline;
+	}
+	
+	div.bodyflip p {
+		font-family: calibri;
+		color: #252525;
+		line-height: 22px;
+		font-size: 17px; 
+		text-align: justify;
+		/* padding: 0 80px 0 80px; */
+	}
+	
+	div.bodyimg {
+		width: 80%;
+		height: 500px;
+		background-image: url("../images/pic2flip.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		/* border: 1px solid red; */
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	}
 }
-
-footer p {
-	color: #e6e6e6;
-	font-family: calibri;
-	text-align: left;
-	font-size: 15px;
-	line-height: 20px;
-}
-
-div.copy {
-	/* border: solid 1px red; */
-	width: 100%;
-	display: flex;
-	align-items: flex-end;
-	height: 70px;
-	justify-content: center;
-
-}
-

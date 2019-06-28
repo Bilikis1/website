@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>          
 <html>
 <head>
 	<title>Project PROG-HMI</title>
@@ -6,77 +6,152 @@
   	<meta name="keywords" content="Women and Girls NGO in Niger State, Youth Organization in Niger State, Girls education in Niger State, Women and girls empowerment in Niger State, Women and Girls NGO in Nigeria, Youth Organization in Nigeria, Girls education in Nigeria, Women and girls empowerment in Nigeria">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/projectprog.css">
+	<link rel="stylesheet" type="text/css" href="css/headerfooter.css">
+	<meta name="google-site-verification" content="3YABAXoz0tdMsTbkHzpOnK8jn0vDEvqQo9DA2yxzdBo" />
 </head>
 <body>
-	<header>
-		<a href="images/hmilogopng.png"><img src="images/hmilogopng.png"></a>
-		<h1>Welcome to HMI</h1>
-	</header> 
-	<nav id="hminav">
-			<ul>
-				<li><a href="index.html">About
-					<span class="arrow">&#x25BC;</span>
-				</a>
-					<ul class="submenu">
-						<li><a href="index.html#whowe">Who We Are</a></li>
-						<li><a href="index.html#vision">Vision</a></li>
-						<li><a href="index.html#mission">Mission</a></li>
-						<li><a href="index.html#core">Core Values</a></li>
-					</ul>
-				</li>
-				<li><a href="#">What We do
-					<span class="arrow">&#x25BC;</span>
-				</a>
-					<ul class="submenu">
-						<li><a href="girlseducation.html">Girls Education</a></li>
-						<li><a href="health.html">Health</a></li>
-						<li><a href="economic.html">Economic Empowerment</a></li>
-						<li><a href="fyn.html">Youth Development</a></li>
-						<li><a href="#">Democracy and Good Governance</a></li>
-						<li><a href="#">Peace</a></li>
-					</ul>
-				</li>
-				<li><a href="fyn.html">Youth</a></li>
-				<li><a href="#">Projects
-					<span class="arrow">&#x25BC;</span>
-				</a>
-					<ul class="submenu">
-						<li><a href="projectprog.html">PROG(Promotion of Girl Child Education</a></li>
-						<li><a href="codeme.html">CODE-ME</a></li>
-						<li><a href="projecthap.html">HAP(Health Awareness Program)</a></li>
-						<li><a href="projectvow.html">VOW(Vocational Skills for Rural Women)</a></li>
-						<li><a href="#">Vote Make Nigeria Better</a></li>
-						<li><a href="projectflip.html">FLIP(Functional Literacy Program for Women)</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Impacts
-					<span class="arrow">&#x25BC;</span>
-				</a>
-				<ul class="submenu">
-					<li><a href="progimpact.html">PROG Impacts</a></li>
-					<li><a href="hapimpacts.html">HAP Impacts</a></li>
-					<li><a href="#">FLIP Impacts</a></li>
-					<li><a href="#">VOW Impacts</li>
-					<li><a href="#">Vote Make Nigeria Better</a></li>
-				</ul>
-				</li>
-				<li><a href="#">Take Action
-					<span class="arrow">&#x25BC;</span>
-				</a>
-					<ul class="submenu">
-						<li><a href="#">Donate</a></li>
-						<li><a href="#">Partner</a></li>
-						<li><a href="#">Sponsor</a></li>
-						<li><a href="#">Volunteer</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Gallery</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Blog</a></li>
-			</ul>
-		</nav>
-
-	<div class="contentwrap">
+	<div class="progwrapper">
+			<header>
+					<input id="searchbox" type="text" placeholder="Search">
+						<!-- <img id="search" src="images/magnifying-glass.svg"> -->
+					<h1>Welcome to HMI</h1> 
+					<div class="logoham">
+						<a href="images/hmilogopng.png"><img src="images/hmilogopng.png"></a> 
+						<div class="hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</div>
+					</div>
+					
+				</header> 
+				<nav class="mobile">
+				<div id="myNav" class="overlay">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					
+					<div class="overlay-content">
+						<li class="dropdown">
+							<a href="#" class="dropbtn home">ABOUT US<span class="arrow">&#x25BC;</span></a>
+							<div class="dropdown-content">
+							<a href="index.html#whowe">Who We Are</a>
+							<a href="index.html#vision">Vision</a>
+							<a href="index.html#mission">Mission</a>
+							<a href="index.html#core">Core Values</a>
+							</div>
+						</li><hr>
+						<li class="dropdown">
+							<a href="#">WHAT WE DO<span class="arrow">&#x25BC;</span></a>
+							<div class="dropdown-content">
+								<a href="girlseducation.html">Girls Education</a>
+								<a href="health.html">Health</a>
+								<a href="economic.html">Economic Empowerment</a>
+								<a href="fyn.html">Youth Development</a>
+								<a href="#">Democracy and Good Governance</a>
+							</div>
+						</li><hr>
+						<a href="fyn.html">FYN</a><hr>
+						<li class="dropdown">
+							<a href="#">PROJECTS<span class="arrow">&#x25BC;</span></a>
+							<div class="dropdown-content">
+								<a href="projectprog.html">PROG<br>(Promotion of Girl Child Education</a>
+								<a href="codeme.html">CODE-ME</a>
+								<a href="projecthap.html">HAP<br>(Health Awareness Program)</a>
+								<a href="projectvow.html">VOW<br>(Vocational Skills for Rural Women)</a>
+								<a href="makenigeriabetter.html">Make Nigeria Better</a>
+								<a href="projectflip.html">FLIP<br>(Functional Literacy Program for Women)</a>
+							</div>
+						</li><hr>
+						<li class="dropdown">
+								<a href="#">IMPACTS<span class="arrow">&#x25BC;</span></a>
+								<div class="dropdown-content">
+									<a href="progimpact.html">PROG Impacts</a>
+									<a href="hapimpacts.html">HAP Impacts</a>
+									<a href="#">FLIP Impacts</a>
+									<a href="#">VOW Impacts</a>
+									<a href="#">Make Nigeria Better</a>
+								</div>
+							</li><hr>
+							<li class="dropdown">
+								<a href="#">GET INVOLVED<span class="arrow">&#x25BC;</span></a>
+								<div class="dropdown-content">
+									<a href="#">Sponsor</a>
+									<a href="#">Partner</a>
+									<a href="#">Membership</a>
+									<a href="#">Volunteer</a>
+								</div>
+							</li><hr>
+							<li class="dropdown">
+								<a href="#">MEDIA CENTER<span class="arrow">&#x25BC;</span></a>
+								<div class="dropdown-content">
+										<a href="#">Gallery</a>
+										<a href="#">Event</a>
+										<a href="#">News</a>
+										<a href="#">Blog</a>
+								</div>
+							</li><hr>
+							<a href="#">DONATE</a><hr>
+					</div>
+					
+				</div>
+				</nav>
+		
+				<nav class="desktop">
+					<div>
+						<li class="dropdown">
+							<a href="index.html" class="dropbtn">About Us<span class="arrow">&#x25BC;</span></a>
+							<div class="dropdown-content">
+								<a href="index.html#whowe">Who We Are</a>
+								<a href="index.html#vision">Vision</a>
+								<a href="index.html#mission">Mission</a>
+								<a href="index.html#core">Core Values</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">What We do<span class="arrow">&#x25BC;</span></a>
+							<div class="dropdown-content">
+								<a href="girlseducation.html">Girls Education</a>
+								<a href="health.html">Health</a>
+								<a href="economic.html">Economic Empowerment</a>
+								<a href="fyn.html">Youth Development</a>
+								<a href="#">Democracy and Good Governance</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Projects<span class="arrow">&#x25BC;</span>                                                                                                                                                                                                                                                                                                                                                                          </a>
+							<div class="dropdown-content">
+								<a href="projectprog.html">PROG(Promotion of Girl Child Education</a>
+								<a href="codeme.html">CODE-ME</a>
+								<a href="projecthap.html">HAP(Health Awareness Program)</a>
+								<a href="projectvow.html">VOW(Vocational Skills for Rural Women)</a>
+								<a href="makenigeriabetter.html">Make Nigeria Better</a>
+								<a href="projectflip.html">FLIP(Functional Literacy Program for Women)</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropbtn">Impacts<span class="arrow">&#x25BC;</span></a>
+							<div class="dropdown-content">
+								<a href="progimpact.html">PROG Impacts</a>
+								<a href="hapimpacts.html">HAP Impacts</a>
+								<a href="#">FLIP Impacts</a>
+								<a href="#">VOW Impacts</a>
+								<a href="#">Make Nigeria Better</a>
+							</div>
+						</li>
+						<li class="dropdown"><a href="#" class="dropbtn">Get Involved<span class="arrow">&#x25BC;</span></a>
+							<div class="dropdown-content">
+								<a href="#">Sponsor</a>
+								<a href="#">Partner</a>
+								<a href="#">Membership</a>
+								<a href="#">Volunteer</a>
+							</div>
+						</li>
+						<li class="dropdown"><a href="#" class="dropbtn">Media Center<span class="arrow">&#x25BC;</span></a>
+							<div class="dropdown-content">
+								<a href="#">Gallery</a>
+								<a href="#">Event</a>
+								<a href="#">News</a>
+								<a href="#">Blog</a>
+							</div>
+						</li>
+						<li class="dropdown"><a href="#" class="dropbtn">Donate</a></li>
+					</div>
+				</nav>
 		<div class="hprog">
 			<img src="images/project.jpg">
 			<h1>PROJECT PROG<br>(Promotion of Girls' Education)</h1>
@@ -137,42 +212,48 @@
 			<p>Similarly, HMI has the responsibility to manage, monitor, report to it stakeholders and demonstrating that resources are being spent efficiently. Finally, at the end of pilot year, our donors will make a project visit to analyse the efficiency, impacts and motivation of the beneficiaries and local community. This would further assure our donors and partners of HMI effective project management and the need to sustain the project.</p>
 
 		</div>
-	</div>
-	<footer>
-			<div class="footercontainer">
-				<div class="littleabout">
-					<h1>Her Matter Initiative (HMI)</h1>
-					<p>HMI is investing qualitative resources into ensuring that Nigerian women and
-					girls are empowered towards the actualization of the gender angle the UN
-					Sustainable Development Goals (SDGs).</p>
-				</div>
-				<div class="links">
-					<h1>Useful links</h1>
-					<li><a href="#">About us</a></li>
-					<li><a href="#">What we do</a></li>
-					<li><a href="#">Youth</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Impacts</a></li>
-					<li><a href="#">Donate</a></li>
-					<li><a href="#">Take action</a></li>
-					<li><a href="#">News</a></li>
-					<li><a href="#">Blog</a></li>
-				</div>
-				<div class="downlogo">
-					<img src="images/pnglogo2.png">
-				</div>
-				<div class="contact">
-					<h1>Get in touch</h1>
-					<p>Adjacent Handmade Nursery/Primary Sch.,<br>
-					Gbaiko, Bosso, Minna, Niger State,<br>
-					Nigeria.</p><br><br>
-					<p>Tel: 07063856763, 07085181196.</p>
-					<p>Email: hermatterinitiative@gmail.com</p>
+		<footer>
+				<div class="footercontainer">
+					<div class="littleabout">
+						<h1>Her Matter Initiative (HMI)</h1>
+						<p>HMI is investing qualitative resources into ensuring that Nigerian women and
+						girls are empowered towards the actualization of the gender angle the UN
+						Sustainable Development Goals (SDGs).</p>
+					</div>
+					<div class="links">
+						<h1>Useful links</h1>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">What we do</a></li>
+						<li><a href="#">Youth</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Impacts</a></li>
+						<li><a href="#">Donate</a></li>
+						<li><a href="#">Take action</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Blog</a></li>
+					</div>
+					<div class="downlogo">
+							<a href="images/hmilogopng.png"><img  id="downlogo" src="images/hmilogopng.png"></a>
+					</div>
+					<div class="contact">
+						<h1>Get in touch</h1>
+						<p>Adjacent Handmade Nursery/Primary Sch.,Gbaiko, Bosso, Minna, Niger State,<br>
+						Nigeria.</p>
+						<p>Tel: 07063856763, 07085181196.</p>
+						<p>Email: hermatterinitiative@gmail.com</p>
+						<div class="social"><a href="#"><img  src="images/facebook.svg"></a><a href="#"><img src="images/twitter.svg"></a><a href="#"><img src="images/instagram.svg"></a><a href="https://hermatterinitiative@gmail.com"><img src="images/gmail.svg"></a>
+							<a href="#"><img src="images/youtube.svg"></a></div>
+					</div>
 	
 				</div>
-			</div>
-			<div class="copy"><p>Copyrights &copy;2019 All rights reserved by Her Matter Initiative(HMI).</p></div>	
-		</footer>
+				<div class="copy">
+					<p>Copyrights &copy;2019.<br> All rights reserved by Her Matter Initiative(HMI).</p>
+				</div>
+			</footer>
+
+	</div>
+	<script src="JS/jscode.js"></script>
+
 	</body>
 	</html>
 	
