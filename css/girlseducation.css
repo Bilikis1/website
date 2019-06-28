@@ -1,11 +1,11 @@
-*{
-	margin: 0px;
-	padding: 0px;
+*, *::before, *::after{
 	box-sizing: border-box;
-	/* border: solid 1px red;b */
+	/* border: solid 1px red; */
 }
 
 body {
+	margin: 0px;
+	padding: 0px;
 	background-image: url("../images/translogo.png");
 }
 
@@ -667,7 +667,6 @@ div.text2 p {
 		/* border: 1px solid red; */
 		background-image: url("../images/pic2ge.jpg");
 		background-size: cover;
-		backg
 	} 
 
 	div.text2 {
@@ -789,7 +788,6 @@ div.text2 p {
 		/* border: 1px solid red; */
 		background-image: url("../images/pic2ge.jpg");
 		background-size: cover;
-		backg
 	} 
 
 	div.text2 {

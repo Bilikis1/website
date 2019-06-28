@@ -12,12 +12,13 @@ body {
 
 
 .mobile a {
-    display: none;
+    /* display: none; */
 }
 .overlay {
     height: 100%;
     width: 0;
-    position: fixed;
+		position: fixed;
+		display: block;
     z-index: 1;
     top: 0;
     left: 0;
@@ -57,9 +58,9 @@ body {
     right: 25px;
     font-size: 45px;
     color: #fff;
-  }
+	}
 
-	.dropdown {
+		.dropdown {
 		position: relative;
 		display: inline-block;
 		/* padding: 9px 12px; */
@@ -95,7 +96,7 @@ body {
 		border-bottom: 2px solid white;
 		border-top: 2px solid white;
 		left: 0px;
-		top: 60px;
+		top: 35px;
 		transition: background 0.45s;
 		line-height: 20px
 	}
@@ -136,6 +137,7 @@ body {
 }
 
 header {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	height: 200px;
@@ -341,35 +343,34 @@ div.copy p{
 
 @media (min-width: 320px) and (max-width: 479px) {
 
-/* nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 319px;
-    height: 40px;
-    background: #fff;
-    box-shadow: 0 2px 4px rgb(44, 66, 80, 0.50);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    align-items:center;
+/* #myNav{
+	transition: translate 0.3s;
+}
+
+#myNav.active{
+	transform: translateX(200px);
 } */
 
-
-
 .mobile a {
-    display: none;
+    /* display: none; */
 }
+
 .overlay {
     height: 100%;
     width: 0;
-    position: fixed;
+		position: fixed;
+		display: block;
     z-index: 1;
     top: 0;
     left: 0;
     background: rgb(57, 57, 66);
     overflow-x: hidden;
     transition: 0.5s;
-  }
+	}
+	
+	/* #myNav.active-menu{
+		width: 80%;
+	} */
   
   .overlay-content {
     position: relative;
@@ -440,7 +441,7 @@ div.copy p{
 		border-bottom: 2px solid white;
 		border-top: 2px solid white;
 		left: 0px;
-		top: 60px;
+		top: 35px;
 		transition: background 0.45s;
 		line-height: 20px
 	}
@@ -554,7 +555,7 @@ header img {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	display: none;
+	/* display: none; */
 
 } 
 
@@ -774,7 +775,7 @@ header img {
 		border-bottom: 2px solid white;
 		border-top: 2px solid white;
 		left: 0px;
-		top: 60px;
+		top: 35px;
 		transition: background 0.45s;
 		line-height: 20px
 	}
@@ -887,7 +888,7 @@ header img {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	display: none;
+	/* display: none; */
 } 
 
 footer {
@@ -1126,7 +1127,7 @@ div.hamburger {
 		border-bottom: 2px solid white;
 		border-top: 2px solid white;
 		left: 0px;
-		top: 45px;
+		top: 35px;
 		transition: background 0.45s;
 		/* display: flex */
 		padding-left: 15px; 
@@ -1407,14 +1408,14 @@ div.copy p{
 			display: none;
 	}
 	.overlay {
-			height: 100%;
-			width: 0;
-			position: fixed;
-			z-index: 1;
-			top: 0;
-			left: 0;
-			background: rgb(57, 57, 66);
-			overflow-x: hidden;
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background: rgb(57, 57, 66);
+		overflow-x: hidden;
 		transition: 0.5s;
 		display: none
 		}
@@ -1499,7 +1500,7 @@ div.copy p{
 			border-bottom: 2px solid white;
 			border-top: 2px solid white;
 			left: 0px;
-			top: 45px;
+			top: 35px;
 			transition: background 0.45s;
 			/* display: flex */
 			padding-left: 15px; 
@@ -1874,7 +1875,7 @@ div.copy p{
 				border-bottom: 2px solid white;
 				border-top: 2px solid white;
 				left: 0px;
-				top: 45px;
+				top: 35px;
 				transition: background 0.45s;
 				/* display: flex */
 				padding-left: 15px; 
@@ -2253,7 +2254,7 @@ div.copy p{
 					border-bottom: 2px solid white;
 					border-top: 2px solid white;
 					left: 0px;
-					top: 45px;
+					top: 35px;
 					transition: background 0.45s;
 					/* display: flex */
 					padding-left: 15px; 
